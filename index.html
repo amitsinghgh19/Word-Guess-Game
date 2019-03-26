@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+    <script src="assets/css/animation.css"></script>
+    <script src='http://code.jquery.com/jquery-1.8.2.min.js'></script>
+   
+</head>
+
+<body class='ui-mobile-viewport ui-overlay-c'>
+<!-- <button  id="pauseButton" type="button" >Pause</button> -->
+    <header id="GameHeader">
+        <div id="wrapper">
+            <h1 class="hgman">HANGMAN</h1>
+            <h3 class="etstyle">Guess & Play</h3>
+            </div>
+          </div>
+    </header>
+
+    <section class="GameResult" id='content' data-role='content'>
+        <div class="wl"><strong>Geuss the singer's first name & listen that singer's song!</strong></div>
+        <div>
+                <img id="hmImage" src="assets/images/Guess_the_Singer.png" style="width:200px">
+         </div>
+       
+        <div class='image'>
+			<img src='assets/images/Hangman_1.png' alt='Hangman' class='hangman' id='hangman_1'/>
+			<img src='assets/images/Hangman_2.png' alt='Hangman' class='hangman' id='hangman_2'/>
+			<img src='assets/images/Hangman_3.png' alt='Hangman' class='hangman' id='hangman_3'/>
+			<img src='assets/images/Hangman_4.png' alt='Hangman' class='hangman' id='hangman_4'/>
+			<img src='assets/images/Hangman_5.png' alt='Hangman' class='hangman' id='hangman_5'/>
+			<img src='assets/images/Hangman_6.png' alt='Hangman' class='hangman' id='hangman_6'/>
+			<img src='assets/images/Hangman_7.png' alt='Hangman' class='hangman' id='hangman_7'/>
+        </div>
+    </section>
+
+        
+    <section class="PlayareaScoreboard">
+        <div class="pa">Press any key(letters) to get started!</div>
+        <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ _</h3>
+        <ul class="hintClass">
+            <li >Hint: <span id="hintid">*,*</span></li>
+        </ul>
+        <h4 id="random-guess"></h4>
+        <br>
+       
+        <div class="sb">Score Board</div>
+        <div>
+            <ul class="score">
+                <li >Wins: <span id="wn">0</span></li>
+                <li >Guesses Left: <span id="gl">6</span></li>
+                <li >Losses: <span id="ls">0</span></li>
+                <li >Wrorg Guesses: <span id="wg">?</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <small>Copyright  &copy;</small>
+    </footer>
+    <script src="assets/javascript/hangman.js"></script>
+</body>
+</html>
