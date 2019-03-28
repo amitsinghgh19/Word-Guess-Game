@@ -61,12 +61,6 @@ var audio = new Audio('assets/music/justinTim.mp3');
         document.getElementById('word-blanks').textContent = underScores.join();
         console.log(underScores);
 
-        //reset the score card to default value
-        // Wins=0;
-        // gussesLeft =6;
-        // wrongLetter = [];
-        // loss=0;
-
         //print guess left value on the score board
         document.getElementById('gl').textContent = gussesLeft;
         randWord= randWord;
@@ -75,9 +69,7 @@ var audio = new Audio('assets/music/justinTim.mp3');
 
     function replaceImg()
     {
-        //console.log("1.Replay-current img="+currentImage);
        currentImage++;
-        //console.log("2.Replay-current img="+currentImage);
     
     if(currentImage===1)
     {
@@ -282,13 +274,6 @@ function winLose()
             $('#random-guess').text("");
         }, 2000);
 
-        // //reset the score card to default value
-        // // Wins=0;
-        // gussesLeft =6;
-        // document.getElementById('gl').textContent = gussesLeft;
-        // wrongLetter = [];
-        // document.getElementById('wg').textContent = wrongLetter;
-        // // loss=0;
         setTimeout(function() {
             $('#random-guess').text("");
         }, 2000);
