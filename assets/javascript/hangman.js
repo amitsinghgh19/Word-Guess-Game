@@ -72,6 +72,51 @@ var audio = new Audio('assets/music/justinTim.mp3');
         randWord= randWord;
     
     }
+
+    function replaceImg()
+    {
+        //console.log("1.Replay-current img="+currentImage);
+       currentImage++;
+        //console.log("2.Replay-current img="+currentImage);
+    
+    if(currentImage===1)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
+        console.log("passing if1");
+    }
+    if(currentImage===2)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_2.png";
+        console.log("passing if2");
+    }
+    if(currentImage===3)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_3.png";
+        console.log("passing if3");
+    }
+    if(currentImage===4)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_4.png";
+        console.log("passing if4");
+    }
+   if(currentImage===5)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_5.png";
+        console.log("passing if5");
+    }
+    if(currentImage===6)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_6.png";
+        console.log("passing if6");
+    }
+   if(currentImage===7)
+    {
+        document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
+        console.log("passing if7");
+    }
+    
+
+    }
 ////////////////////////////////////////////////////////////////////////
     function playAgain(){
     //pick any random word from the word bank
@@ -95,9 +140,10 @@ var audio = new Audio('assets/music/justinTim.mp3');
     gussesLeft =6;
     document.getElementById('gl').textContent = gussesLeft;
     wrongLetter = [];
+    currentImage = 1;
     document.getElementById('wg').textContent = wrongLetter;
-    // loss=0;
-   
+
+
    //print underscore = random word size
         underScores=[];
         //print underscore = random word size
@@ -108,7 +154,7 @@ var audio = new Audio('assets/music/justinTim.mp3');
             
         }
 
-    
+
     //Print underscore
     document.getElementById('word-blanks').textContent = underScores.join();
     console.log(underScores);
@@ -116,7 +162,27 @@ var audio = new Audio('assets/music/justinTim.mp3');
     //print guess left value on the score board
     document.getElementById('gl').textContent = gussesLeft;
     randWord= randWord;
+
     
+    //replaceImg();
+
+    // console.log("1.guess_left="+gussesLeft);
+    // if(gussesLeft ===6)
+    // {
+    //     console.log("2.guess_left="+gussesLeft);
+    //     document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
+    //     gussesLeft--
+    //     console.log("3.guess_left="+gussesLeft);
+        
+    // }
+    // if(gussesLeft ===5)
+    // {
+    //     console.log("4.guess_left="+gussesLeft);
+    //     document.getElementById("hangman_1").src = "assets/images/Hangman_2.png";
+    //     gussesLeft--
+    //     console.log("6.guess_left="+gussesLeft);
+        
+    // }
     
 }
 ////////////////////////////////////////////////////////////////////////
@@ -276,15 +342,17 @@ document.onkeyup = function(event)
         console.log(wrongLetter);
         document.getElementById('wg').textContent = wrongLetter.join();
 
-        currentImage++;
-			var imageId = '#hangman_' + currentImage;
-			$(imageId).fadeTo(300, 1.0, function() {
-				if (currentImage == 7) {
-                    console.log(wrongLetter);
-				}
-            });
-            
-        winLose();
+        currentImage;
+         console.log("current img="+currentImage);
+		// 	var imageId = '#hangman_' + currentImage;
+		// 	$(imageId).fadeTo(300, 1.0, function() {
+		// 		if (currentImage == 7) {
+        //             console.log(wrongLetter);
+                    
+		// 		}
+        //     });
+            replaceImg();
+            winLose();
        
     }
 }
