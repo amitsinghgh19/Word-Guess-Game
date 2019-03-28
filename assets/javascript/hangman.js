@@ -218,9 +218,8 @@ function winLose()
         //alert('Congratulations! You Won!');
         youWon();
         wins++
-        document.getElementById('wn').textContent = wins++;
+        document.getElementById('wn').textContent = wins;
         playTrack();
-        
         playAgain();
     }
     else if(gussesLeft === 0)
