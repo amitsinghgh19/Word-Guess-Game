@@ -162,28 +162,6 @@ var audio = new Audio('assets/music/justinTim.mp3');
     //print guess left value on the score board
     document.getElementById('gl').textContent = gussesLeft;
     randWord= randWord;
-
-    
-    //replaceImg();
-
-    // console.log("1.guess_left="+gussesLeft);
-    // if(gussesLeft ===6)
-    // {
-    //     console.log("2.guess_left="+gussesLeft);
-    //     document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
-    //     gussesLeft--
-    //     console.log("3.guess_left="+gussesLeft);
-        
-    // }
-    // if(gussesLeft ===5)
-    // {
-    //     console.log("4.guess_left="+gussesLeft);
-    //     document.getElementById("hangman_1").src = "assets/images/Hangman_2.png";
-    //     gussesLeft--
-    //     console.log("6.guess_left="+gussesLeft);
-        
-    // }
-    
 }
 ////////////////////////////////////////////////////////////////////////
 
@@ -311,6 +289,9 @@ function winLose()
         // wrongLetter = [];
         // document.getElementById('wg').textContent = wrongLetter;
         // // loss=0;
+        setTimeout(function() {
+            $('#random-guess').text("");
+        }, 2000);
         playAgain();
         //reloadPage();//refresh the page
     }
