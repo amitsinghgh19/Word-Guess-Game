@@ -111,7 +111,7 @@ var audio = new Audio('assets/music/justinTim.mp3');
     }
    if(currentImage===7)
     {
-        document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
+        document.getElementById("hangman_1").src = "assets/images/Hangman_7.png";
         console.log("passing if7");
     }
     
@@ -193,12 +193,14 @@ var audio = new Audio('assets/music/justinTim.mp3');
         setTimeout(function() {
             document.getElementById("hmImage").src = "assets/images/Guess_the_Singer.png";
 
-            document.getElementById("hangman_7").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_6").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_5").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_4").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_3").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_2").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_7").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_6").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_5").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_4").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_3").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_2").src = "assets/images/Hangman_1.png";
+
+            document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
         }, 2000);
       
     }
@@ -209,12 +211,14 @@ var audio = new Audio('assets/music/justinTim.mp3');
         setTimeout(function() {
             document.getElementById("hmImage").src = "assets/images/Guess_the_Singer.png";
 
-            document.getElementById("hangman_7").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_6").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_5").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_4").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_3").src = "assets/images/Hangman_1.png";
-            document.getElementById("hangman_2").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_7").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_6").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_5").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_4").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_3").src = "assets/images/Hangman_1.png";
+            // document.getElementById("hangman_2").src = "assets/images/Hangman_1.png";
+
+            document.getElementById("hangman_1").src = "assets/images/Hangman_1.png";
 
         }, 2000);
         
@@ -342,7 +346,7 @@ document.onkeyup = function(event)
         console.log(wrongLetter);
         document.getElementById('wg').textContent = wrongLetter.join();
 
-        currentImage;
+        //currentImage;
          console.log("current img="+currentImage);
 		// 	var imageId = '#hangman_' + currentImage;
 		// 	$(imageId).fadeTo(300, 1.0, function() {
