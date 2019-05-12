@@ -274,9 +274,9 @@ function winLose()
             $('#random-guess').text("");
         }, 2000);
 
-        setTimeout(function() {
-            $('#random-guess').text("");
-        }, 2000);
+        // setTimeout(function() {
+        //     $('#random-guess').text("");
+        // }, 2000);
         playAgain();
         //reloadPage();//refresh the page
     }

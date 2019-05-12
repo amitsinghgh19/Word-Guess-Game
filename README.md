@@ -1,3 +1,6 @@
+ # Website
+ https://amitsinghgh19.github.io/Word-Guess-Game/
+
 # Word-Guess-Game
 This application randomly select a singer's name.
 The application also gives you two random letters from the randomely selected name.
